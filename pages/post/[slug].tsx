@@ -26,7 +26,7 @@ export async function getStaticProps({ params: { slug } }: staticProps) {
 
 export default function PostPage({ frontmatter, content }: any) {
   return (
-    <main className="h-full w-full flex flex-col items-center justify-center">
+    <main className="h-full w-full flex flex-col items-center justify-center my-10">
       <h1 className="text-4xl font-bold">{frontmatter.title}</h1>
       <span className="text-gray-500 text-sm">{frontmatter.date}</span>
       <div className="prose w-7/12 mt-10 text-gray-500 text-lg">
