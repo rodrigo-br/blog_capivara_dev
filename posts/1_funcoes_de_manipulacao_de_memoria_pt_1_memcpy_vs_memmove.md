@@ -1,9 +1,9 @@
 ---
-title: "segundo poste"
-metaTitle: "Next.js page options and how they work"
-metaDesc: "How to use pages in Next.js exploring the options"
-socialImage: images/22-09-2021.jpg
-date: "2021-09-22"
+title: "Funções de manipulação de memória"
+metaTitle: "Pt 1 - memcpy vs memmove"
+metaDesc: "testando"
+socialImage: public/imagens/memory_variables.png
+date: "2022-11-30"
 tags:
   - nextjs
 ---
