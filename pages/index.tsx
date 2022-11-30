@@ -1,12 +1,10 @@
 import fs from "fs";
 import matter from "gray-matter";
-import Footer from "../components/Footer";
 import Feature from "../components/Feature";
 import Posts from "../components/Posts";
 
 export async function getStaticProps() {
   const files = fs.readdirSync("posts");
-
   const posts = files.map((fileName) => {
     const slug = fileName.replace(".md", "");
     const readFile = fs.readFileSync(`posts/${fileName}`, "utf-8");
@@ -18,6 +16,7 @@ export async function getStaticProps() {
 }
 
 export default function Home({ posts }: any) {
+  posts = posts.reverse();
   return (
     <>
       <main className="w-screen block h-full">
@@ -26,7 +25,6 @@ export default function Home({ posts }: any) {
           <Posts posts={posts.slice(1)} />
         </div>
       </main>
-      <Footer />
     </>
   );
 }

@@ -3,7 +3,24 @@
 @tailwind utilities;
 
 #__next {
-  @apply flex flex-col min-h-screen w-screen items-center; 
+  @apply flex flex-col min-h-screen w-screen items-center;
+}
+
+body {
+  @apply overflow-x-hidden;
+}
+
+.blog div {
+  @apply flex flex-col items-start gap-5;
+}
+
+.blog pre {
+  @apply flex flex-row items-center gap-5 bg-gray-100;
+  @apply p-5 rounded-lg w-full;
+}
+
+.blog span {
+  @apply text-orange-400 font-bold;
 }
 
 @layer components {

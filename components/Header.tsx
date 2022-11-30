@@ -17,7 +17,7 @@ export default function Header() {
           <li className="px-6 p-4"><Link href="/contact">Contact</Link></li>
         </ul>
         <Link href="coffee" className="flex items-center gap-1 px-4 py-2 rounded bg-red-400 text-white">
-        By me a coffe <BiCoffeeTogo className="text-2xl" /></Link>
+        Buy me a coffe <BiCoffeeTogo className="text-2xl" /></Link>
       </nav>
     </header>
   );
